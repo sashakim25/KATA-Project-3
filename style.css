@@ -1,0 +1,237 @@
+body {
+    font-family: "TT Lakes", sans-serif;
+    background-color: #F8F8F8;
+    margin-inline: auto;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url(font/TTLakes/TTLakes-Regular.ttf);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+}
+
+.header__title {
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #7E7E82;
+    padding-block: 16px;
+}
+
+.button-go {
+    background-image: url(img/go.png);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+
+.brand-item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding-inline: 16px;
+}
+
+.lenovo-logo {
+    width: 108px;
+    height: 32px;
+}
+.samsung-logo {
+    width: 116px;
+    height: 38.52px;
+}
+.apple-logo {
+    width: 44px;
+    height: 44px;
+}
+.viewsonic-logo {
+    width: 128px;
+    height: 21px;
+}
+.bosch-logo {
+    width: 128px;
+    height: 28.6px;
+}
+.hp-logo {
+    width: 52px;
+    height: 52px;
+}
+.acer-logo {
+    width: 94px;
+    height: 24px;
+}
+.sony-logo {
+    width: 128px;
+    height: 25.6px;
+}
+
+.main__button_show-more {
+    display: flex;
+    background-color: #F8F8F8;
+    width: auto;
+    height: 24px;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    body {
+        min-width: 320px;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .header__title {
+        padding-inline: 20px;
+    }
+
+    .swiper {
+        width: 100%;
+        padding-bottom: 16px;
+        position: relative;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        padding: 16px;
+    }
+
+    .swiper-slide {
+        flex: 0 0 auto;
+        width: 240px;
+    }
+
+    .brand-item {
+        width: 240px;
+        height: 72px;
+    }
+
+    .main__gradient {
+        content: '';
+        display: flex;
+        width: 24px;
+        height: 85px;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
+
+    .main__button_show-more {
+        display: none;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 1119px) {
+
+    .header {
+        height: 56px;
+    }
+
+    .header__title {
+        padding-inline: 24px;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 24px;
+        row-gap: 16px;
+        column-gap: 24px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        flex: 0 0 224px;
+    }
+
+    .swiper-pagination, .main__gradient {
+        display: none;
+    }
+
+    .brand-item {
+        width: 224px;
+        height: 72px;
+    }
+
+    .main__button_show-more {
+        margin-left: 24px;
+    }
+
+    .hidden, .hidden-large {
+        display: none;
+    }
+}
+
+@media (min-width: 1119px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    .header {
+        height: 56px;
+    }
+
+    .header__title {
+        padding-inline: 32px;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 32px;
+        row-gap: 16px;
+        column-gap: 32px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        flex: 0 0 240px;
+    }
+
+    .swiper-pagination, .main__gradient {
+        display: none;
+    }
+
+    .brand-item {
+        width: 240px;
+        height: 72px;
+    }
+
+    .main__button_show-more {
+        margin-left: 32px;
+    }
+
+    .hidden-large {
+        display: none;
+    }
+}
